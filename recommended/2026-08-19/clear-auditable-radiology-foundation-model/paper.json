@@ -1,0 +1,15 @@
+{
+  "id": "clear-auditable-radiology-foundation-model",
+  "title": "CLEAR: an auditable foundation model for radiology grounded in clinical concepts",
+  "authors": ["Tianyu Han", "Riga Wu", "Yu Tian", "Firas Khader", "Lisa C. Adams", "Keno K. Bressem", "Christos Davatzikos", "Jakob Nikolas Kather", "Li Shen", "David A. Mankoff", "Eduardo Mortani Barbosa", "Daniel Truhn"],
+  "venue": "Nature Biomedical Engineering",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41551-026-01741-4",
+  "abstract": "'Black box' deep learning models for medical image interpretation limit clinical trust and analysis of performance degradation. Here we introduce Concept-Level Embeddings for Auditable Radiology (CLEAR), an auditable foundation model based on clinical concepts. Trained on over 0.87 million image-report pairs from 239,391 patients, CLEAR learns a visual representation and projects chest X-rays into a semantically rich space defined by large language model embeddings, making every prediction decomposable into weighted contributions from individual radiological observations. External validation on four large, physician-annotated datasets from the United States, Europe and Asia shows that CLEAR not only achieves state-of-the-art classification performance but also enables applications: auditable zero-shot pathology detection, systematic identification of radiological confounders and the creation of expert-level concept bottleneck models from data-driven concepts. By integrating clinical knowledge directly into its reasoning process, CLEAR offers a framework for robust model auditing, safer deployment and enhanced physician-AI collaboration, advancing towards trustworthy medical AI.",
+  "axes": ["기관 간 일반화", "다중 소견 분류", "판독 가능성/설명력"],
+  "takeaway": "흉부 X-ray를 임상 개념 공간으로 투영해 예측을 개별 소견별 기여도로 분해하는 CLEAR가 미국, 유럽, 아시아의 4개 외부 코호트에서 최고 수준의 분류 성능과 감사 가능한 제로샷 병변 탐지를 동시에 달성했다.",
+  "relevance": "우리 코호트는 No Finding 외에도 Infiltration, Atelectasis, Nodule, Effusion, Pneumothorax 등 다중 라벨 소견이 공존하는 흉부 X-ray 272건이며 AP/PA 두 촬영 자세(AP 88건, PA 184건)와 5개 기관이 섞여 있어, CLEAR가 강조하는 다기관·다소견 환경에서의 개념 기반 해석 가능성을 검토할 대상으로 적합하다.",
+  "caveat": "우리 데이터에는 CLEAR 검증에 쓰인 것과 같은 대규모 전문가 주석 외부 코호트가 없어, 논문이 보고한 절대적 분류 성능 수치를 우리 기관 데이터로 재현하거나 검증할 수는 없다.",
+  "check": "CLEAR의 개념 기반 설명이 우리 코호트에서 다빈도로 관찰되는 Infiltration·Atelectasis 동반 소견(예: Atelectasis|Infiltration 4건) 사례에 대해 임상적으로 납득 가능한 기여도 분해를 제공하는지 소규모로 검토해볼 만하다."
+}
